@@ -9,4 +9,3 @@ fred.color("green")
 for i in range(0, 4):    
     fred.forward(100)
     fred.right(90)
-
