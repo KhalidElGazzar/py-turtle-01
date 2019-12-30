@@ -8,7 +8,7 @@ If the number is evenly divisible by both 3 and 5, you say "FizzBuzz"
 """
 
 def fizz():
-    print("Fizz")
+    print("Fizz", end="")
 
 def buzz():
     print("Buzz")
@@ -16,10 +16,12 @@ def buzz():
 print("Let's start ..")
 for i in range(20):
     if i % 3 == 0 and i % 5 == 0:
-        print("FizzBuzz")
+        fizz()
+        buzz()
     else:
         if i % 3 == 0:
             fizz()
+            print()
         elif i % 5 == 0:
             buzz()
         else:
